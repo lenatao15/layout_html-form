@@ -12,83 +12,82 @@
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off" method="POST">
     <fieldset>
       <legend> Personal information</legend>
-      <p>
-        <label for="sname">Surname</label>
+      <div class="wrapper">
+        <label for="sname">Surname:</label>
         <input type="text" id="sname" name="sname">
-      </p>
-      <p>
-        <label for="fname">Name:</label>
-        <input type="text" id="fname" name="fname">
-      </p>
-      <p>
+      </div>
+      <div class="wrapper">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="wrapper">
         <label for="year">How old are You?</label>
         <input type="number" id="year" name="year" min="1" max="150" value="12">
-        </label>
-      </p>
-      <p>
+        </div>
+      <div class="wrapper">
         <label for="birthday">Full date of birth:</label>
         <input type="date" id="birthday" name="birthday">
-      </p>
-      <p class="engine">
-        <label for="agree">I accept the term of the agreement</label>
-        <input type="checkbox" name="agree" id="agree">
-      </p>
+      </div>
+      <div class="wrapper">
+        <label for="accept">I accept the term of the agreement</label>
+        <input type="checkbox" name="accept" id="accept">
+      </div>
     </fieldset>
 
     <fieldset>
       <legend>Registration</legend>
-      <p>
+      <div class="wrapper">
         <label for="mail">E-mail:</label>
         <input type="email" id="mail" name="mail" placeholder="email@example.com">
-      </p>
-      <p class="engine">
+      </div>
+      <div class="wrapper">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
-      </p>
+      </div>
     </fieldset>
 
     <fieldset>
       <legend>An interesting fact about you!</legend>
-      <p>Do you love cats?
-        <input type="radio" id="yes" name="cat">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="cat">
-        <label for="no">No</label>
-      </p>
-      <p>
+      <div class="wrapper">Do you love cats?
+        <input type="radio" id="y" name="y">
+        <label for="y">Yes</label>
+        <input type="radio" id="n" name="n">
+        <label for="n">No</label>
+      </div>
+      <div class="wrapper">
         <label for="color">What is your favorite color?</label>
         <input type="color" id="color" name="color">
-      </p>
-      <p>
+      </div>
+      <div class="wrapper">
         <label for="time">What time do you go to bed?</label>
         <input type="time" id="time" name="time" required>
-      </p>
-      <p>
+      </div>
+      <div class="wrapper">
         <label for="car">What are your favorite brand cars?</label>
         <select name="car" id="car" multiple>
           <option value="car">BMW</option>
           <option value="car">Audi</option>
           <option value="car">Lada</option>
         </select>
-      </p>
-      <p class="engine">
+      </div>
+      <div class="wrapper">
         <label for="rate">How do you rate our work?</label>
         <input type="range" id="rate" name="rate" min="0" max="10" value="0">
-      </p>
+      </div>
     </fieldset>
     <fieldset>
       <legend>Additional info</legend>
-      <p>
+      <div class="wrapper">
         <label for="comments">Comments:</label>
         <textarea name="comments" id="comments" minlength="3" maxlength="30"></textarea>
-      </p>
-      <p class="engine">
+      </div>
+      <div class="wrapper">
         <label for="recom">Would you recommend us?</label>
         <select name="recom" id="recom">
           <option value="recom">Yes</option>
           <option value="recom">No</option>
         </select>
-      </p>
+      </div>
     </fieldset>
 
     <button type="submit" onsubmit="onSubmit()">Submit</button>

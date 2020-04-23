@@ -1,13 +1,11 @@
-.engine {
-  margin-bottom: 0;
+fieldset {
+  margin-bottom: 20px;
 }
 
-p {
-  padding: 0;
-  margin: 0;
+.wrapper {
   margin-bottom: 10px;
 }
 
-fieldset {
-  margin-bottom: 20px;
+.wrapper:last-child {
+  margin-bottom: 0;
 }
